@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CeliUs</title>
+</head>
+<body>
+ <div id="here"></div>
+ <br>
+ <br>
+ <input type="number" id="inputValue" placeholder="Enter a number">
+ <button id="btnCube"> Click Here</button>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="celi.js"></script>
+
+
+<script>
+  $( document ).ready(function() {
+    $('#btnCube').click(function () {
+      let celi = $( '#inputValue' ).celi();
+      console.log('Rounded Value will be  ' + celi);
+    }); 
+  });
+  </script>      
+  
+</html>
